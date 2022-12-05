@@ -39,4 +39,7 @@ public class User {
 
     }
 
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
