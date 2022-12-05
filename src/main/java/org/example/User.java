@@ -29,8 +29,14 @@ public class User {
     public double getSaldo() {
         return saldo;
     }
-    public double payment(double money){
-        return saldo=saldo-money;
+    public double withdraw(double money){
+        if (money>saldo) {
+            System.out.println("Nie masz tyle na koncie");
+        }else{
+            saldo=saldo-money;
+        }
+        return saldo;
+
     }
 
 }

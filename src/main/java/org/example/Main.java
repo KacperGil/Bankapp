@@ -35,11 +35,7 @@ public class Main {
              case 3:
                  System.out.println("Ile chcesz wypłacić pieniędzy?: ");
                  double moneydraw=scanner.nextDouble();
-                 user1.payment(moneydraw);
-                 if (moneydraw> user1.getSaldo()){
-                     System.out.println("Nie masz tyle na koncie");
-                     break;
-                 }
+                 user1.withdraw(moneydraw);
                  System.out.println("Twoje saldo teraz: "+ user1.getSaldo());
                  break;
              case 4:
